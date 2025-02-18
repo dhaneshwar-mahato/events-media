@@ -1,0 +1,43 @@
+.search-container{
+    background-color: #f4f4f4;
+    text-align: center;
+    box-shadow: none;
+}
+form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+form h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+form p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+form input, form select, form button {
+    padding: 10px;
+    font-size: 16px;
+}
+
+form input, form select {
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+}
+
+form button {
+    background: #ff6600;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background: #e65c00;
+}

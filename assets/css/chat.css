@@ -1,0 +1,125 @@
+/* Chat Container */
+.chat-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Chat Header */
+.chat-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Chat Box */
+.chat-box {
+    height: 400px;
+    overflow-y: auto;
+    padding: 10px;
+    background: white;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Chat Messages */
+.chat-box p {
+    max-width: 75%;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.chat-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.chat-box p {
+    max-width: 70%;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    word-wrap: break-word;
+}
+
+/* Sender (logged-in user) messages on right */
+.chat-box .message-sent {
+    align-self: flex-end;
+    background: #007bff;
+    color: white;
+    text-align: right;
+    border-top-right-radius: 0;
+}
+
+/* Receiver messages on left */
+.chat-box .message-received {
+    align-self: flex-start;
+    background: #e4e6eb;
+    color: #333;
+    text-align: left;
+    border-top-left-radius: 0;
+}
+
+
+/* Chat Form */
+.chat-container form {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+/* Text Input */
+.chat-container textarea {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: none;
+    font-size: 14px;
+}
+
+/* Send Button */
+.chat-container button {
+    padding: 10px 15px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.chat-container button:hover {
+    background: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .chat-container {
+        width: 90%;
+    }
+
+    .chat-box {
+        height: 300px;
+    }
+
+    .chat-container textarea {
+        font-size: 12px;
+    }
+
+    .chat-container button {
+        font-size: 12px;
+    }
+}
